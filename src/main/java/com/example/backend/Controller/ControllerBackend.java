@@ -21,21 +21,21 @@ public class ControllerBackend {
     }
 
     @GetMapping("/todo/{id}")
-    public Todo getProduct(@PathVariable String id) {
+    public Todo getTodo(@PathVariable String id) {
         return serviceBackend.getTodoById(id);
     }
 
     @PostMapping("/todo")
-    public Todo addProduct(@RequestBody Todo todo) {
+    public Todo addTodo(@RequestBody Todo todo) {
         return serviceBackend.addTodo(todo);
     }
     @PutMapping ("/todo/{id}")
-    public Todo akturoduct(@PathVariable String id,@RequestBody  Todo todo) {
+    public Todo akturTodo(@PathVariable String id,@RequestBody  Todo todo) {
         return serviceBackend.AktuTodo(id,todo);
     }
 
     @DeleteMapping("/todo/{id}")
-    public void deleteProduct(@PathVariable String id) {
+    public void deleteTodo(@PathVariable String id) {
          serviceBackend.deleteTodo(id);
     }
 
