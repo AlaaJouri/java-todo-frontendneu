@@ -19,6 +19,9 @@ public class Todo {
         this.status = status;
     }
 
+    public Todo(String description, String myFirstItem, Status open) {
+    }
+
 
     @Override
     public String toString() {
